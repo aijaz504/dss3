@@ -1,0 +1,13 @@
+/home/ubuntu/Desktop/mysql_mysql-server.tar
+
+.tar
+grype +em
+trivy image -i +em
+snyk container test docker-archive:+em+
+
+
+Normal Scan
+grype +em
+trivy image -i +em
+snyk container test "+em+ "
+clair_scan --ip=192.168.174.132
